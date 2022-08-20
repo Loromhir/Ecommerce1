@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Product from'./Product.jsx'
 const Home = () => {
   return (
     <>
@@ -11,13 +11,13 @@ const Home = () => {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="/assets/images/home/img1.png" className="d-block w-100" alt="Ecommerce" height='500px'/>
+            <img src="/assets/images/home/img1.png" className="d-block w-100" alt="Ecommerce" height='400px'/>
           </div>
           <div className="carousel-item">
-            <img src="/assets/images/home/img2.png" className="d-block w-100" alt="Ecommerce" height='500px'/>
+            <img src="/assets/images/home/img2.png" className="d-block w-100" alt="Ecommerce" height='400px'/>
           </div>
           <div className="carousel-item">
-            <img src="/assets/images/home/img4.jpg" className="d-block w-100" alt="Ecommerce" height='500px'/>
+            <img src="/assets/images/home/img4.jpg" className="d-block w-100" alt="Ecommerce" height='400px'/>
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
@@ -29,6 +29,7 @@ const Home = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
+      <Product/>
     </>
   )
 }

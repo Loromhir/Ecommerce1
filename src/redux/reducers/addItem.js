@@ -1,5 +1,5 @@
 const initialState={
-    cart:[ ]
+    
 }
 
 const rootReducer= (state = initialState, action)=>{

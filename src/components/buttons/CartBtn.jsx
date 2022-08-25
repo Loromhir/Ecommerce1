@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 import * as actionCreators from '../../redux/actions/index'
 const actions = actionCreators;
-const CartBtn = () => {
+const CartBtn = (cart) => {
 
   return (
     <>

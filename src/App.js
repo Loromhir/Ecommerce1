@@ -11,7 +11,7 @@ import './styles/App.css';
 function App() {
   return (
     <>
-    <Header/>
+      <Header/>
       <Route exact path='/' component={Home}/>
       <Route exact path='/products' component={Product}/>
       <Route exact path='/products/:id' component={ProductDetail}/>

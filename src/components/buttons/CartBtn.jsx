@@ -1,21 +1,15 @@
 import React from 'react'
-import { connect } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom'
-import * as actionCreators from '../../redux/actions/index'
-const actions = actionCreators;
-const CartBtn = (cart) => {
 
+const CartBtn = () => {
+  const state= useSelector(state=> state.addItem.cart)
   return (
     <>
       <NavLink to='/cart' className='btn btn-outline-primary ms-2'>
-        <span className='fa fa-shopping-cart me-1'></span> Cart ({cart.length})
+        <span className='fa fa-shopping-cart me-1'>Cart ({state.length})</span> 
       </NavLink>
     </>
   )
 }
-const mapStateToProps=(state)=>{
-  return{
-    cart: state.cart
-  }
-}
-export default connect(mapStateToProps,null) (CartBtn)
+export default CartBtn
